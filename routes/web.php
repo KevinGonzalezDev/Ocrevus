@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get("/paginaInicial", "App\Http\Controllers\AdminController@paginaInicial")->name('paginaInicial');
 Route::get("/Tiempos", "App\Http\Controllers\AdminController@Tiempos")->name('Tiempos');
+Route::get("/Em", "App\Http\Controllers\AdminController@Em")->name('Em');

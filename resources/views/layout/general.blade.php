@@ -18,7 +18,7 @@
         <ul id="menu-links">
             <li><a href= "{{route('paginaInicial')}}" @if (Request::url() == route('paginaInicial')) class="selected" @endif>Vive la NeuroExperiencia</a></li>
             <li><a href="{{route('Tiempos')}}" @if (Request::url() == route('Tiempos')) class="selected" @endif>Los mejores tiempos</a></li>
-            <li><a href="#">Frenando la EM</a></li>
+        <li><a href="{{route('Em')}}" @if (Request::url() == route('Em')) class = "selected" @endif>Frenando la EM</a></li>
         </ul>
     </div>
 

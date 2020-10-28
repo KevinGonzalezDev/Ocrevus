@@ -13,4 +13,8 @@ class AdminController extends Controller
     public function Tiempos(){
         return view('Tiempos');
     }
+
+    public function Em(){
+        return view('Em');
+    }
 }
