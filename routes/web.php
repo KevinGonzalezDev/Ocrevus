@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("/paginaInicial", "App\Http\Controllers\AdminController@paginaInicial")->name('paginaInicial');
+Route::get("/Tiempos", "App\Http\Controllers\AdminController@Tiempos")->name('Tiempos');
