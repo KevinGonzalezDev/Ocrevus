@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get("/welcome", "App\Http\Controllers\AdminController@welcome")->name('welcome');
 Route::get("/paginaInicial", "App\Http\Controllers\AdminController@paginaInicial")->name('paginaInicial');
 Route::get("/Tiempos", "App\Http\Controllers\AdminController@Tiempos")->name('Tiempos');
 Route::get("/Em", "App\Http\Controllers\AdminController@Em")->name('Em');
+Route::get("/popup", "App\Http\Controllers\AdminController@popup")->name('popup');

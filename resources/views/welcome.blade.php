@@ -22,7 +22,7 @@
 
                 <div class="condiciones-container">
                     <input type="checkbox" name="condiciones" id="condicicones" onclick="redirect()">
-                    <p>Acepto los &nbsp<a href="#">términos y condiciones</a></p> 
+                <p>Acepto los &nbsp<a href="{{route('popup')}}" id="condiciones">términos y condiciones</a></p> 
                 </div>
 
             </form>
@@ -35,6 +35,8 @@
         <img src="img/ocrevus-logo.png" alt="logo ocrevus" id="logo-ocrevus">
         <img src="img/logo-roche.png" alt="logo roche" id="logo-roche">
     </div>
+
+    <script src="js/popup.js"></script>
 
 <script>
     function redirect(){

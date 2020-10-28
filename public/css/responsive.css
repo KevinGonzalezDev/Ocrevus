@@ -1,0 +1,100 @@
+@media screen and (max-width:1600px){
+    .login-container img{
+        width: 500px;
+    }
+
+    .game-container{
+        width: 85%;
+    }
+
+    .game-container img:nth-child(1){
+        width: 400px;
+    }
+
+    .game-container img:nth-child(2){
+        width: 900px;
+    }
+
+    .slideshow-banner{
+        margin: 5rem 0 3rem 0;
+    }
+
+    .main-em-container{
+        width:85%;
+    }
+}
+
+@media screen and (max-width:1440px){
+    .login-container{
+        width: 80%;
+    }
+
+    .login{
+        margin: 0;
+    }
+
+    .game-container{
+        width: 90%;
+    }
+
+    .game-container img:nth-child(2){
+        width: 850px;
+    }
+
+    .video-container iframe{
+        margin-right: 4rem;
+    }
+
+    #menu-links{
+        padding:5em 1em 5em 1em;
+    }
+
+    .time-container{
+        width: 80%;
+    }
+
+    .gifs-container img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1280px){
+
+    :root{    
+        --main-font-size-titles:32px;
+        --main-font-size-parrafos:16px;
+        --main-font-size-parrafos-pequeños:13px;
+        --main-font-size-subtitulos:27px;
+    }
+
+    .login-container img{
+        width: 450px;
+    }
+
+    .login form{
+        padding: 2em;
+    }
+
+    #menu-links{
+        padding: 5em 0 5em 0;
+    }
+
+    .menu-container ul{
+        padding: 3em 2em 3em 2em;
+    }
+
+    .game-container img:nth-child(1){
+        width: 350px;
+    }
+
+    .game-container img:nth-child(2){
+        width: 800px;
+    }
+
+    .video-container iframe{
+        width: 700px;
+        height: 350px;
+        margin-right: 2rem;
+    }
+}
+/* LOGIN */

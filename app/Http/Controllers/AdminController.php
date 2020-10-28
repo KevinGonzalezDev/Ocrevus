@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+    public function welcome(){
+        return view('welcome');
+    }
+
     public function paginaInicial(){
         return view('paginaInicial');
     }
@@ -16,5 +20,9 @@ class AdminController extends Controller
 
     public function Em(){
         return view('Em');
+    }
+
+    public function popup(){
+        return view('popup');
     }
 }

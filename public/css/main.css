@@ -14,6 +14,7 @@
     src: url('../fonts/AvenirLTStd-Black.otf');
 }
 
+
 :root{
     --main-white-color:#fff;
     --main-blue-color:#636DAE;
@@ -530,4 +531,68 @@ ul{
     object-fit: cover;
     height: 100%;
     align-self: center;
+}
+
+
+
+/* POPUP  CONDICIONES */
+
+.popup-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background-dark.jpg);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.wrap-popup{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto 10rem auto;
+}
+
+.title-popup{
+    width: 100%;
+    padding: 3em 0 3em 0;
+    background-color: var(--main-blue-color);
+}
+
+.title-popup h2{
+    text-align: center;
+    color: var(--main-white-color);
+    font-family: var(--main-font-family-bold);
+    font-size: var(--main-font-size-titles);
+}
+
+.parrafo-popup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    background-color: var(--main-white-color);
+}
+
+.parrafo-popup p{
+    font-size: var(--main-font-size-parrafos);
+    font-family: var(--main-font-family-regular);
+    text-align: justify;
+    padding: 2em 5em 2em 5em;
+}
+
+.parrafo-popup p strong{
+    font-family: var(--main-font-family-bold);
+}
+
+.close-container{
+    align-self: flex-end;
+    margin-bottom: 2em;
 }
