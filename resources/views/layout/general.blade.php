@@ -6,6 +6,7 @@
     <title>OCREVUS</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
 </head>
 <body class="general-body">
 
@@ -17,13 +18,13 @@
         </ul>
 
         <ul id="menu-links">
-            <li><a href= "{{route('paginaInicial')}}" @if (Request::url() == route('paginaInicial')) class="selected" @endif>Vive la NeuroExperiencia</a></li>
+            <li><a href= "{{route('game')}}" @if (Request::url() == route('game')) class="selected" @endif>Vive la NeuroExperiencia</a></li>
             <li><a href="{{route('Tiempos')}}" @if (Request::url() == route('Tiempos')) class="selected" @endif>Los mejores tiempos</a></li>
         <li><a href="{{route('Em')}}" @if (Request::url() == route('Em')) class = "selected" @endif>Frenando la EM</a></li>
         </ul>
     </div>
 
-@yield('content')
+@yield('contentInicial')
 
     <div class="footer-container">
         <h2>Conoce más</h2>

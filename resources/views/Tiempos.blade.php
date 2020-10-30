@@ -1,7 +1,7 @@
 @extends('layout.general')
 
 
-@section('content')
+@section('contentInicial')
     
     <div class="time-container">
         <div class="first-time-container">

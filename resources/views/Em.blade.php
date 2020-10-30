@@ -1,6 +1,6 @@
 @extends('layout.general')
 
-@section('content')
+@section('contentInicial')
 
     <div class="main-em-container">
         <h2>Corriendo contra la EM para frenar la progresión</h2>
@@ -11,7 +11,7 @@
             <img src="img/gifs/Gif-3.gif" alt="img section gifs">
             <img src="img/gifs/Gif-4.gif" alt="img section gifs">
             <img src="img/gifs/Gif-5.gif" alt="img section gifs">
-            <img src="img/gifs/muñequitos.png" alt="img section gifs">
+            <img src="img/gifs/munequitos.png" alt="img section gifs">
         </div>
     </div>
 

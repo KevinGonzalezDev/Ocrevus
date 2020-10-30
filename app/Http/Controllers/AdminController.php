@@ -10,8 +10,8 @@ class AdminController extends Controller
         return view('welcome');
     }
 
-    public function paginaInicial(){
-        return view('paginaInicial');
+    public function game(){
+        return view('game');
     }
 
     public function Tiempos(){

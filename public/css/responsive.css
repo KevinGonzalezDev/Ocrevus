@@ -2,17 +2,8 @@
     .login-container img{
         width: 500px;
     }
-
-    .game-container{
-        width: 85%;
-    }
-
-    .game-container img:nth-child(1){
-        width: 400px;
-    }
-
-    .game-container img:nth-child(2){
-        width: 900px;
+    #logo-icono{
+        width: 500px;
     }
 
     .slideshow-banner{
@@ -22,23 +13,31 @@
     .main-em-container{
         width:85%;
     }
+/*
+    .section-game-edited canvas{
+        width: 900px !important;
+        height: 500px !important;
+    }*/
+
+
 }
 
 @media screen and (max-width:1440px){
+
+    #logo-icono{
+        width: 440px;
+    }
+
+    .section-game-edited{
+        margin-bottom: 4rem;
+    }
+
     .login-container{
         width: 80%;
     }
 
     .login{
         margin: 0;
-    }
-
-    .game-container{
-        width: 90%;
-    }
-
-    .game-container img:nth-child(2){
-        width: 850px;
     }
 
     .video-container iframe{
@@ -56,6 +55,11 @@
     .gifs-container img{
         width: 350px;
     }
+/*
+    .section-game-edited canvas{
+        width: 800px !important;
+        height: 440px !important;
+    }*/
 }
 
 @media screen and (max-width:1280px){
@@ -83,18 +87,15 @@
         padding: 3em 2em 3em 2em;
     }
 
-    .game-container img:nth-child(1){
-        width: 350px;
-    }
-
-    .game-container img:nth-child(2){
-        width: 800px;
-    }
-
     .video-container iframe{
         width: 700px;
         height: 350px;
         margin-right: 2rem;
     }
+/*
+    .section-game-edited canvas{
+        width: 700px !important;
+        height: 400px !important;
+    }*/
 }
 /* LOGIN */

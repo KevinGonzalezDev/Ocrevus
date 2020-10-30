@@ -6,22 +6,25 @@
 
 <div class="login-container">
 
-    <img src="img/muñequito.png" alt="pj">
+    <img src="img/munequito.png" alt="pj">
 
     <div class="login">
-            <form action="#">
+    <form action="{{route('login.front')}}" method="post">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <h2>Identifíquese</h2>
                 <p>¡El tiempo es cerebro!</p>
 
                 <label>*Obligatorio</label>
-                <input type="text" name="correo" id="correo" placeholder="Email*">
-                <input type="text" name="usuario" id="usuario" placeholder="Username*">
+                <input class="{{ $errors->has('email') ? 'is-invalid' : '' }}" type="email" name="email" id="email" placeholder="Email*" required value="{{old('email')}}">
+                {!! $errors->first('email', '<p class="form-error small_2">:message</p>') !!}
+                
+                <input type="text" name="name" id="name" placeholder="Username*">
                 <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad (opcional)">
 
                 <input type="submit" value="Iniciar sesión" id="iniciar-sesion">
 
                 <div class="condiciones-container">
-                    <input type="checkbox" name="condiciones" id="condicicones" onclick="redirect()">
+                    <input type="checkbox" name="condiciones" id="condicicones" required>
                 <p>Acepto los &nbsp<a href="{{route('popup')}}" id="condiciones">términos y condiciones</a></p> 
                 </div>
 
@@ -40,6 +43,6 @@
 
 <script>
     function redirect(){
-        location.href = "paginaInicial";
+        location.href = "game";
     }
 </script>
